@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href=" css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+<script type="text/javascript" src="css/bootstrap.min.css"  ></script>
+<script src="jquery.js"></script>
+<script >
+	$(document).ready(function(){
+		$("#CANCEL").click(function(){
+			$("#i1").val('');
+			$("#i2").val('');
+			alert("you deleted password and user")
+			
+		});
+		$("#LOGIN").click(function(){ 
+			var username=$("#i1").val();
+			 var password=$("#i2").val();
+		
+			 		$("#i1").val('');
+			 		$("#i2").val('');
+			 	
+			alert(`username:${username} password:${password}`)
+			});
+		
+			$("#CANCEL1").click(function(){
+			$("#i3").val('');
+			$("#i4").val('');
+			alert("you deleted password and user")
+			
+		});
+		$("#LOGIN1").click(function(){ 
+			var username=$("#i3").val();
+			 var password=$("#i4").val();
+			 $("#i3").val('');
+			 $("#i4").val('');
+			alert(`username:${username} password:${password}`)
+			
+		});
+	});
+	
+</script>
+<style type="text/css">
+		input:focus{
+			background-color: green!important;
+			color: white !important;
+		}
+		input:hover{
+			background-color: blue!important;
+			
+		}
+
+	</style>
+	<title></title>
+</head>
+<body class="bg-danger" >
+	<div class="row">
+		<div class=col-lg-6>
+	<div class="card" style="width: 400px;">
+		<div class="card-header bg-primary">
+			<h3 class="text-center ">LOGIN</h3>
+		</div>
+		<div class="card-body bg-secondary">
+			<label for="username"><i class="fa fa-user"></i> USERNAME</label>
+			<input id ="i1" class="form-control" id=" username"  type="text"name=" mamata">
+			<label for="password"><i class="fa fa-key"></i> PASSWORD</label>
+			<input id="i2" class="form-control" type="password"  name=" password"></div>
+		 <div class=" card-footer bg-primary">
+			<button id="CANCEL" class="btn btn-outline-danger">cancel</button>
+			<button id="LOGIN" class="btn btn-outline-dark float-right ">login </button>
+		</div>
+	</div>
+</div>
+
+<div class="col-lg-6">
+	<div class="card float-right" style="width: 400px;">
+		<div class="card-header bg-primary">
+			<h3 class="text-center ">LOGIN</h3>
+		</div>
+		<div class="card-body bg-secondary">
+			<label for="username"><i class="fa fa-user fa-2x"></i>USERNAME</label>
+			<input id ="i3" class="form-control" id=" username"  type="text"name=" mamata">
+			<label for="password"><i class="fa fa-key fa-spin"></i> PASSWORD</label>
+			<input id="i4" class="form-control  " type="password"  name=" password"></div>
+		<div class=" card-footer bg-info">
+			<button id="CANCEL1" class="btn btn-danger">cancel</button>
+			<button id="LOGIN1" class="btn btn-success float-right ">register </button>
+		</div>
+	</div>
+</div></div>
+
+</body>
+</html>
